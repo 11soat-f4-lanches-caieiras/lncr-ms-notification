@@ -82,7 +82,7 @@ jobs:
               echo "Obtendo template do Docker File"
               curl -s -H "Authorization: token ${LNCR_MAVEN_PAT}" -o $BIN/$DOCKERFILE_PATH "${DOCKERFILE_TEMPLATE_URL}"
           
-              if [ -f $BASE_IMAGE ]; then
+              if [ -z "$BASE_IMAGE" ]; then
                 BASE_IMAGE="eclipse-temurin:21-jre-alpine"
                 echo "Usando imagem default ${BASE_IMAGE} para o build."
               fi
