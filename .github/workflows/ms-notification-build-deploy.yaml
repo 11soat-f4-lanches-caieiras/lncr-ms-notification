@@ -88,7 +88,7 @@ jobs:
               fi
 
               echo "Configurando Dockerfile para o dominio $MS_DOMAIN e imagem base $BASE_IMAGE"
-              sed -i "s/##MS_DOMAIN##/$MS_DOMAIN/g; s/##BASE_IMAGE/$BASE_IMAGE/g;" $BIN/$DOCKERFILE_PATH
+              sed -i "s/##MS_DOMAIN##/$MS_DOMAIN/g; s/##BASE_IMAGE##/$BASE_IMAGE/g;" $BIN/$DOCKERFILE_PATH
 
       - name: Cache SonarQube packages
         uses: actions/cache@v4
