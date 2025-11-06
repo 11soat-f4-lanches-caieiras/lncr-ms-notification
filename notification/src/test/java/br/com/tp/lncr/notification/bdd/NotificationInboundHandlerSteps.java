@@ -1,7 +1,7 @@
 package br.com.tp.lncr.notification.bdd;
 
 import br.com.tp.lncr.core.exceptions.NotificationException;
-import br.com.tp.lncr.core.model.ResponseMetadata;
+import br.com.tp.lncr.commons.model.ResponseMetadata;
 import br.com.tp.lncr.notification.handlers.NotificationInboundHandler;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
