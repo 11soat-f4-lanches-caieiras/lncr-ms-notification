@@ -1,6 +1,8 @@
 spring:
   application:
-    name: lncr-ms-notification
+    name: notification
+  server:
+    port: "${SERVER_PORT:8080}"
   jackson:
     default-property-inclusion: non_null
     serialization:
@@ -15,7 +17,6 @@ spring:
       ddl-auto: update
       show-sql: true
       format_sql: true
-
 management:
   endpoints:
     web:
@@ -24,10 +25,7 @@ management:
   endpoint:
     health:
       show-details: always
-server:
-  port: 8080
-lncr:
-  notification:
+
 
 
 

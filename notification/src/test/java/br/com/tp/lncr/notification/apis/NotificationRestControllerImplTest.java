@@ -3,7 +3,6 @@ package br.com.tp.lncr.notification.apis;
 
 import br.com.tp.lncr.commons.model.ResponseListModel;
 import br.com.tp.lncr.commons.model.ResponseModel;
-import br.com.tp.lncr.notification.configs.NotificationConfig;
 import br.com.tp.lncr.notification.datasources.postgres.JpaNotificationRepositoryImpl;
 import br.com.tp.lncr.core.dtos.notification.NotificationDTO;
 import br.com.tp.lncr.core.interfaces.notification.NotificationController;
@@ -32,9 +31,6 @@ class NotificationRestControllerImplTest {
 
     @Mock
     private JpaNotificationRepositoryImpl jpaNotificationRepository;
-
-    @Mock
-    private NotificationConfig notificationConfig;
 
     @InjectMocks
     private NotificationRestControllerImpl notificationRestController;

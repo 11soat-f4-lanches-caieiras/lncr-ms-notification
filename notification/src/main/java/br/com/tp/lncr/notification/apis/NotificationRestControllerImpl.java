@@ -3,7 +3,6 @@ package br.com.tp.lncr.notification.apis;
 import br.com.tp.lncr.commons.model.ResponseListModel;
 import br.com.tp.lncr.commons.model.ResponseModel;
 import br.com.tp.lncr.commons.utils.ResponseEntityModelUtil;
-import br.com.tp.lncr.notification.configs.NotificationConfig;
 import br.com.tp.lncr.notification.datasources.postgres.JpaNotificationRepositoryImpl;
 import br.com.tp.lncr.core.dtos.notification.NotificationDTO;
 import br.com.tp.lncr.core.interfaces.notification.NotificationController;
@@ -18,14 +17,11 @@ public class NotificationRestControllerImpl implements NotificationRestControlle
 
     private final NotificationController notificationController;
     private final JpaNotificationRepositoryImpl jpaNotificationRepository;
-    private final NotificationConfig notificationConfig;
 
     public NotificationRestControllerImpl(NotificationController notificationController,
-                                          JpaNotificationRepositoryImpl jpaNotificationRepository,
-                                          NotificationConfig notificationConfig) {
+                                          JpaNotificationRepositoryImpl jpaNotificationRepository) {
         this.notificationController = notificationController;
         this.jpaNotificationRepository = jpaNotificationRepository;
-        this.notificationConfig = notificationConfig;
     }
 
     @Override
