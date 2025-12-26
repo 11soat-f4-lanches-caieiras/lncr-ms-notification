@@ -25,7 +25,7 @@ Microserviço responsável pelo gerenciamento de **Notificações** no sistema L
 
 ## Sonar Quality Gate
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=11soat-f4-lanches-caieiras_lncr-ms-notification&metric=alert_status)](https://sonarcloud.io/project/overview?id=11soat-f4-lanches-caieiras_lncr-ms-notification)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=11soat-f4-lanches-caieiras_lncr-ms-notification&metric=alert_status&token=a6aedd53393cd440f5f564c42dd92d1242df28f4)](https://sonarcloud.io/summary/new_code?id=11soat-f4-lanches-caieiras_lncr-ms-notification)
 
 Acesse o dashboard completo: [SonarCloud - lncr-ms-notification](https://sonarcloud.io/project/overview?id=11soat-f4-lanches-caieiras_lncr-ms-notification)
 
